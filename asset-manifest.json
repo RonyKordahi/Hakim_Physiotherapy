@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/Hakim_Physiotherapy/static/css/main.d5289b2f.css",
-    "main.js": "/Hakim_Physiotherapy/static/js/main.c962fc40.js",
+    "main.js": "/Hakim_Physiotherapy/static/js/main.d0603626.js",
     "index.html": "/Hakim_Physiotherapy/index.html",
     "main.d5289b2f.css.map": "/Hakim_Physiotherapy/static/css/main.d5289b2f.css.map",
-    "main.c962fc40.js.map": "/Hakim_Physiotherapy/static/js/main.c962fc40.js.map"
+    "main.d0603626.js.map": "/Hakim_Physiotherapy/static/js/main.d0603626.js.map"
   },
   "entrypoints": [
     "static/css/main.d5289b2f.css",
-    "static/js/main.c962fc40.js"
+    "static/js/main.d0603626.js"
   ]
 }
