@@ -1,6 +1,7 @@
 {
     "name": "client",
     "version": "0.1.0",
+    "homepage": "https://ronykordahi.github.io/Hakim_Physiotherapy/",
     "private": true,
     "dependencies": {
         "bootstrap": "^5.3.3",
@@ -16,7 +17,7 @@
         "build": "react-scripts build",
         "test": "react-scripts test",
         "eject": "react-scripts eject",
-        "predeploy": "npm run build",
+        "predeploy": "yarn build",
         "deploy": "gh-pages -d build"
     },
     "eslintConfig": {
