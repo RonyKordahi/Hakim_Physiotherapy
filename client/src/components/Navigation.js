@@ -18,6 +18,9 @@ import {
     NavbarToggle,
 } from "react-bootstrap";
 
+// React Router Dom
+import { Link } from "react-router-dom";
+
 const Navigation = () => {
 
     // Detects if the navbar is opened or not
@@ -28,7 +31,7 @@ const Navigation = () => {
         <StyledNavbar expand="lg" onToggle={() => setOpen(!open)} open={open}>
 
             {/* Logo */}
-            <StyledNavbarBrand open={open} href="/">
+            <StyledNavbarBrand open={open} as={Link} to="/">
                 <Logo width={35} height={35} />
                 {
                     open && (
@@ -52,13 +55,17 @@ const Navigation = () => {
             {/* Navbar Links */}
             <Navbar.Collapse>
                 <StyledNav className="me-auto">
-                    <StyledNavLink href="/">Home</StyledNavLink>
-                    <StyledNavLink href="/about">About Us</StyledNavLink>
-                    <StyledNavLink href="/services">Our Services</StyledNavLink>
-                    <StyledNavLink href="/gallery">Gallery</StyledNavLink>
-                    <StyledNavLink href="/contact">Contact Us</StyledNavLink>
+                    <StyledNavLink as={Link} to="/">Home</StyledNavLink>
+                    <StyledNavLink as={Link} to="/about">About Us</StyledNavLink>
+                    <StyledNavLink as={Link} to="/services">Our Services</StyledNavLink>
+                    <StyledNavLink as={Link} to="/gallery">Gallery</StyledNavLink>
+                    <StyledNavLink as={Link} to="/contact">Contact Us</StyledNavLink>
                 </StyledNav>
             </Navbar.Collapse>
+
+            <BigLogoContainer>
+                <Logo width={300} height={300} />
+            </BigLogoContainer>
 
         </StyledNavbar>
     )
@@ -70,10 +77,12 @@ const StyledNavbar = styled(Navbar)`
 
 const StyledNavbarBrand = styled(NavbarBrand)`
     margin-left: 1rem;
+    text-decoration: none;
 `
 
 const StyledBrandText = styled.span`
     margin-left: 1rem;
+    font-size: 1.25rem;
 `
 
 const StyledNavbarToggle = styled(NavbarToggle)`
@@ -90,6 +99,13 @@ const StyledNav = styled(Nav)`
 
 const StyledNavLink = styled(NavLink)`
     font-weight: bold;
+    padding: 0.5rem;
+    text-decoration: none;
+`
+
+const BigLogoContainer = styled.div`
+    margin-top: 5rem;
+    opacity: 0.5;
 `
 
 export default Navigation;

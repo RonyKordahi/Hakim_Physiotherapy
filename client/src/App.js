@@ -1,5 +1,5 @@
 // React Router Dom
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 
 // Styles
 import GlobalStyles from "./styles/Globalstyles";
@@ -18,8 +18,8 @@ const App = () => {
     return (
         <>
             <GlobalStyles />
-            <Navigation />
             <Router>
+                <Navigation />
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/about" element={<About />} />
