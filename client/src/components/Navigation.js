@@ -63,9 +63,13 @@ const Navigation = () => {
                 </StyledNav>
             </Navbar.Collapse>
 
-            <BigLogoContainer>
-                <Logo width={300} height={300} />
-            </BigLogoContainer>
+            {
+                open && (
+                    <BigLogoContainer>
+                        <Logo width={300} height={300} />
+                    </BigLogoContainer>
+                )
+            }
 
         </StyledNavbar>
     )
