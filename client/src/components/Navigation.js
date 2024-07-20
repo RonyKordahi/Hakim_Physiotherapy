@@ -11,11 +11,18 @@ import Hamburger from "../assets/Hamburger";
 
 // React Bootstrap
 import {
+    // Navbar
     Nav,
     Navbar,
     NavLink,
     NavbarBrand,
     NavbarToggle,
+    NavbarOffcanvas,
+
+    // Offcanvas=
+    OffcanvasBody,
+    OffcanvasTitle,
+    OffcanvasHeader,
 } from "react-bootstrap";
 
 // React Router Dom
@@ -28,67 +35,86 @@ const Navigation = () => {
     const [open, setOpen] = useState(false);
 
     return (
-        <StyledNavbar expand="lg" onToggle={() => setOpen(!open)} open={open}>
+        <Navbar expand="lg" onToggle={() => setOpen(!open)}>
 
             {/* Logo */}
-            <StyledNavbarBrand open={open} as={Link} to="/">
+            <StyledNavbarBrand as={Link} to="/">
                 <Logo width={35} height={35} />
-                {
-                    open && (
-                        <StyledBrandText>
-                            Hakim Physiotherapy
-                        </StyledBrandText>
-                    )
-                }
             </StyledNavbarBrand>
 
             {/* Navbar Toggle */}
-            {/* ↪ Symbol displayed changes based on state */}
-            <StyledNavbarToggle aria-controls="basic-navbar-nav">
-                {
-                    !open
-                        ? <Hamburger />
-                        : <Close />
-                }
+            <StyledNavbarToggle aria-controls="navbarScroll">
+                <Hamburger />
             </StyledNavbarToggle>
 
-            {/* Navbar Links */}
-            <Navbar.Collapse>
-                <StyledNav className="me-auto">
-                    <StyledNavLink as={Link} to="/">Home</StyledNavLink>
-                    <StyledNavLink as={Link} to="/about">About Us</StyledNavLink>
-                    <StyledNavLink as={Link} to="/services">Our Services</StyledNavLink>
-                    <StyledNavLink as={Link} to="/gallery">Gallery</StyledNavLink>
-                    <StyledNavLink as={Link} to="/contact">Contact Us</StyledNavLink>
-                </StyledNav>
-            </Navbar.Collapse>
+            {/* Navbar Offcanvas */}
+            <NavbarOffcanvas show={open}>
 
-            {
-                open && (
-                    <BigLogoContainer>
-                        <Logo width={300} height={300} />
-                    </BigLogoContainer>
-                )
-            }
+                {/* Navbar Offcanvas Header */}
+                <StyledOffCanvasHeader>
+                    <OffcanvasTitle>
+                        <Logo width={35} height={35} />
+                        <StyledBrandText>
+                            Hakim Physiotherapy
+                        </StyledBrandText>
+                    </OffcanvasTitle>
 
-        </StyledNavbar>
+                    <StyledCloseButton onClick={() => setOpen(false)}>
+                        <Close />
+                    </StyledCloseButton>
+
+                </StyledOffCanvasHeader>
+
+                {/* Navbar Offcanvas Body */}
+                <OffcanvasBody>
+
+                    {/* Navbar Links */}
+                    <StyledNav className="me-auto" navbarScroll onClick={() => setOpen(false)}>
+                        <StyledNavLink as={Link} to="/">Home</StyledNavLink>
+                        <StyledNavLink as={Link} to="/about">About Us</StyledNavLink>
+                        <StyledNavLink as={Link} to="/services">Our Services</StyledNavLink>
+                        <StyledNavLink as={Link} to="/gallery">Gallery</StyledNavLink>
+                        <StyledNavLink as={Link} to="/contact">Contact Us</StyledNavLink>
+                    </StyledNav>
+
+                    {/* Navbar Big Logo */}
+                    {
+                        open && (
+                            <BigLogoContainer>
+                                <Logo width={300} height={300} />
+                            </BigLogoContainer>
+                        )
+                    }
+
+                </OffcanvasBody>
+
+            </NavbarOffcanvas>
+
+        </Navbar>
     )
 }
 
-const StyledNavbar = styled(Navbar)`
-    border-bottom: ${(props) => props.open ? "solid 2px var(--purple)" : "none"};
-`
-
+// Separates the logo from the page border
 const StyledNavbarBrand = styled(NavbarBrand)`
     margin-left: 1rem;
     text-decoration: none;
 `
 
-const StyledBrandText = styled.span`
-    margin-left: 1rem;
-    font-size: 1.25rem;
+const StyledOffCanvasHeader = styled(OffcanvasHeader)`
+    justify-content: space-between
 `
 
+// Separates the text from the logo
+const StyledBrandText = styled.span`
+    margin-left: 1rem;
+`
+
+const StyledCloseButton = styled.button`
+    border: none;
+    background-color: white;
+`
+
+// Remove border and box from the toggle button
 const StyledNavbarToggle = styled(NavbarToggle)`
     border: none;
 
@@ -97,19 +123,23 @@ const StyledNavbarToggle = styled(NavbarToggle)`
     }
 `
 
+// Center the links
 const StyledNav = styled(Nav)`
     align-items: center;
 `
 
+// Revert to default style
 const StyledNavLink = styled(NavLink)`
-    font-weight: bold;
     padding: 0.5rem;
+    font-weight: bold;
     text-decoration: none;
 `
 
+// Makes big logo transparent
 const BigLogoContainer = styled.div`
-    margin-top: 5rem;
     opacity: 0.5;
+    margin-top: 5rem;
 `
+
 
 export default Navigation;
