@@ -12,6 +12,7 @@ import Contact from "./pages/Contact";
 import Services from "./pages/Services";
 
 // Components
+import Footer from "./components/Footer";
 import Navigation from "./components/Navigation";
 
 const App = () => {
@@ -27,6 +28,7 @@ const App = () => {
                     <Route path="/contact" element={<Contact />} />
                     <Route path="/services" element={<Services />} />
                 </Routes>
+                <Footer />
             </Router>
         </>
     );

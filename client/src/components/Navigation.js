@@ -48,7 +48,7 @@ const Navigation = () => {
             </StyledNavbarToggle>
 
             {/* Navbar Offcanvas */}
-            <NavbarOffcanvas show={open}>
+            <NavbarOffcanvas show={open} placement="end">
 
                 {/* Navbar Offcanvas Header */}
                 <StyledOffCanvasHeader>
@@ -59,6 +59,7 @@ const Navigation = () => {
                         </StyledBrandText>
                     </OffcanvasTitle>
 
+                    {/* Custom close button icon */}
                     <StyledCloseButton onClick={() => setOpen(false)}>
                         <Close />
                     </StyledCloseButton>
@@ -101,7 +102,7 @@ const StyledNavbarBrand = styled(NavbarBrand)`
 `
 
 const StyledOffCanvasHeader = styled(OffcanvasHeader)`
-    justify-content: space-between
+    justify-content: space-between;
 `
 
 // Separates the text from the logo
@@ -132,6 +133,7 @@ const StyledNav = styled(Nav)`
 const StyledNavLink = styled(NavLink)`
     padding: 0.5rem;
     font-weight: bold;
+    color: var(--purple);
     text-decoration: none;
 `
 

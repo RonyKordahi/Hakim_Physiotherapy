@@ -21,8 +21,9 @@ const GlobalStyles = createGlobalStyle`
 /* 3. Add accessible line-height */
 * {
     margin: 0;
+    color: #714a74;
+    font-family: Poppins !important;
     line-height: calc(1em + 0.5rem);
-    color: #714a74 !important;
 }
 
 /* 4. Improve text rendering */
@@ -67,6 +68,48 @@ h6 {
 /* Variables */
 :root {
     --purple: #714a74;
+}
+
+/* *********** */
+/* Core Styles */
+/* *********** */
+main {
+    /* Adapts based on user being logged in or not */
+    margin: auto;
+    padding: 25px;
+    min-height: calc(100vh - 12rem);
+}
+
+footer {
+    height: 12rem;
+    padding: 25px;
+    background-color: var(--purple);
+}
+
+/* ********* */
+/* Carrousel */
+/* ********* */
+.carousel-control-next, 
+.carousel-control-prev {
+    top: 45%;
+    opacity: 1;
+    padding: 5px;
+    border-radius: 50%;
+    width: fit-content;
+    height: fit-content;
+    background-color: var(--purple);
+}
+
+.carousel-control-next {
+    margin-right: -50px;
+}
+
+.carousel-control-prev {
+    margin-left: -50px;
+}
+
+.carousel-inner {
+    /* height: 100%; */
 }
 `
 
