@@ -50,7 +50,7 @@ const Home = () => {
                 <h2>Our Services</h2>
 
                 <p>
-                    We offer different services depending on our patient’s needs. We offer physiotherapy as well as behaviour therapy for children.
+                    We offer different services depending on our patient’s needs. We offer physiotherapy as well as behavior therapy for children.
                 </p>
 
                 <StyledButton onClick={navigateToServices}>
@@ -68,7 +68,7 @@ const Home = () => {
                     {
                         Object.keys(testimonials).map((key) => {
                             return (
-                                <StyledCarouselItem interval={10000}>
+                                <StyledCarouselItem interval={10000} key={key}>
 
                                     <CarouselContent>
 
