@@ -1,16 +1,22 @@
 {
   "files": {
     "main.css": "/Hakim_Physiotherapy/static/css/main.d5289b2f.css",
-    "main.js": "/Hakim_Physiotherapy/static/js/main.c948ccb0.js",
+    "main.js": "/Hakim_Physiotherapy/static/js/main.da8aedff.js",
     "static/media/Mireille.png": "/Hakim_Physiotherapy/static/media/Mireille.7aa0a6a26b58baa5bcba.png",
+    "static/media/gallery_1.jpg": "/Hakim_Physiotherapy/static/media/gallery_1.352998cd04a08966d7c8.jpg",
+    "static/media/gallery_6.jpg": "/Hakim_Physiotherapy/static/media/gallery_6.26608458d063aa5d2a15.jpg",
+    "static/media/gallery_2.jpg": "/Hakim_Physiotherapy/static/media/gallery_2.5e3af7c9210d937c6eab.jpg",
+    "static/media/gallery_4.jpg": "/Hakim_Physiotherapy/static/media/gallery_4.e3b0e3c4b493b94d89f2.jpg",
+    "static/media/gallery_3.jpg": "/Hakim_Physiotherapy/static/media/gallery_3.089565240e1f7d8236b8.jpg",
+    "static/media/gallery_5.jpg": "/Hakim_Physiotherapy/static/media/gallery_5.4a049169b27723e1cce7.jpg",
     "static/media/service_physio.png": "/Hakim_Physiotherapy/static/media/service_physio.17f49519111f70b82b49.png",
     "static/media/service_behavior.png": "/Hakim_Physiotherapy/static/media/service_behavior.ac51ebee521db27a59b5.png",
     "index.html": "/Hakim_Physiotherapy/index.html",
     "main.d5289b2f.css.map": "/Hakim_Physiotherapy/static/css/main.d5289b2f.css.map",
-    "main.c948ccb0.js.map": "/Hakim_Physiotherapy/static/js/main.c948ccb0.js.map"
+    "main.da8aedff.js.map": "/Hakim_Physiotherapy/static/js/main.da8aedff.js.map"
   },
   "entrypoints": [
     "static/css/main.d5289b2f.css",
-    "static/js/main.c948ccb0.js"
+    "static/js/main.da8aedff.js"
   ]
 }
