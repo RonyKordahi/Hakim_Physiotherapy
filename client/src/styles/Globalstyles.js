@@ -108,8 +108,24 @@ footer {
     margin-left: -50px;
 }
 
-.carousel-inner {
-    /* height: 100%; */
+.carousel-indicators {
+    bottom: -100px !important;
+}
+
+.carousel-indicators button {
+    border-radius: 50%;
+    opacity: 1 !important;
+    width: 15px !important;
+    height: 15px !important;
+    background-color: #ededed !important;
+}
+
+.carousel-indicators button.active {
+    background-color: var(--purple) !important;
+}
+
+.carousel-inner{
+    overflow: visible;
 }
 `
 

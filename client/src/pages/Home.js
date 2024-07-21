@@ -63,7 +63,7 @@ const Home = () => {
 
                 <h2>Testimonials</h2>
 
-                <StyledCarousel indicators={false} id="RONY">
+                <StyledCarousel indicators={false}>
 
                     {
                         Object.keys(testimonials).map((key) => {
