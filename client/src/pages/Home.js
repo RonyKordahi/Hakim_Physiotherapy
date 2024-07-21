@@ -186,7 +186,7 @@ const BottomQuotePosition = styled.div`
 `
 
 const StyledCarouselCaption = styled(CarouselCaption)`
-    bottom: 0;
+    bottom: -10px;
     position: absolute;
     font-weight: normal;
     color: var(--purple);
