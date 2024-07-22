@@ -101,8 +101,9 @@ const Home = () => {
 
 const LogoContainer = styled.section`
     display: flex;
-    align-items: center;
     margin-bottom: 25px;
+    align-items: center;
+    justify-content: center;
 `
 
 const TitleContainer = styled.div`
