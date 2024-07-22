@@ -1,6 +1,6 @@
 const Logo = ({width, height}) => {
     return (
-        <svg width={`${width}px`} height={`${height}px`} viewBox="0 0 800 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width={width} height={height} viewBox="0 0 800 800" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clipPath="url(#clip0_42_2669)">
                 <path d="M460.833 17.5593V364.39H617.402C631.813 364.39 643.497 352.707 643.497 338.295V181.726C643.497 87.6076 571.96 9.89367 480.398 0.103065C469.965 -1.01256 460.833 7.06868 460.833 17.5593Z" fill="#FFB89D" />
                 <path d="M460.833 338.295V520.958H617.402C711.521 520.958 789.234 449.421 799.025 357.859C800.141 347.427 792.061 338.295 781.569 338.295H460.833Z" fill="#CD6279" />
