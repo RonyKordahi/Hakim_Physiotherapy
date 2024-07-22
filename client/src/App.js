@@ -10,6 +10,7 @@ import About from "./pages/About";
 import Gallery from "./pages/Gallery";
 import Contact from "./pages/Contact";
 import Services from "./pages/Services";
+import NotFound from "./pages/NotFound";
 
 // Components
 import Footer from "./components/Footer";
@@ -27,6 +28,7 @@ const App = () => {
                     <Route path="/gallery" element={<Gallery />} />
                     <Route path="/contact" element={<Contact />} />
                     <Route path="/services" element={<Services />} />
+                    <Route path="/*" element={<NotFound />} />
                 </Routes>
                 <Footer />
             </Router>
