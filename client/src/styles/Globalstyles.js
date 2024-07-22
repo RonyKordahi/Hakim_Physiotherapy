@@ -40,6 +40,7 @@ video,
 canvas,
 svg {
     max-width: 100%;
+    visibility: visible !important;
 }
 
 /* 6. Remove built-in form typography styles */
