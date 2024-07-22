@@ -1,9 +1,11 @@
 import { createGlobalStyle } from "styled-components";
 
 const GlobalStyles = createGlobalStyle`
+
 /* ********* */
 /* CSS Reset */
 /* ********* */
+
 /* 0. Maxing out page height */
 #root {
     min-height: 100px;
@@ -86,9 +88,9 @@ footer {
     background-color: var(--purple);
 }
 
-/* ********* */
-/* Carrousel */
-/* ********* */
+/* **************** */
+/* Carrousel Styles */
+/* **************** */
 .carousel-control-next, 
 .carousel-control-prev {
     top: 45%;

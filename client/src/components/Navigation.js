@@ -77,17 +77,18 @@ const Navigation = () => {
                         <StyledNavLink as={Link} to="/gallery">Gallery</StyledNavLink>
                         <StyledNavLink as={Link} to="/contact">Contact Us</StyledNavLink>
                     </StyledNav>
+                </OffcanvasBody>
+
+                <StyledOffcanvasBody>
 
                     {/* Navbar Big Logo */}
                     {
                         open && (
-                            <BigLogoContainer>
-                                <Logo width={300} height={300} />
-                            </BigLogoContainer>
+                            <Logo width={300} height={300} />
                         )
                     }
 
-                </OffcanvasBody>
+                </StyledOffcanvasBody>
 
             </NavbarOffcanvas>
 
@@ -138,10 +139,8 @@ const StyledNavLink = styled(NavLink)`
 `
 
 // Makes big logo transparent
-const BigLogoContainer = styled.div`
+const StyledOffcanvasBody = styled(OffcanvasBody)`
     opacity: 0.5;
-    margin-top: 5rem;
 `
-
 
 export default Navigation;
