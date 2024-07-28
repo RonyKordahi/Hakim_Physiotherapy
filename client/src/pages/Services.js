@@ -4,6 +4,7 @@ import styled from "styled-components";
 // Assets
 import PhysioSrc from "../assets/services/service_physio.png";
 import BehaviorSrc from "../assets/services/service_behavior.png";
+import NeedlingSrc from "../assets/services/service_needling.png";
 
 const Services = () => {
     return (
@@ -20,13 +21,13 @@ const Services = () => {
 
             </Section>
 
-            {/* Service: Physiotherapy */}
+            {/* Service: Dry Needling */}
             <Section>
 
-                <h2>Physiotherapy</h2>
+                <h2>Dry Needling</h2>
 
                 <ImageContainer>
-                    <img src={PhysioSrc} alt="Physiotherapy" />
+                    <img src={NeedlingSrc} alt="Dry Needling" />
                 </ImageContainer>
 
             </Section>
@@ -38,6 +39,17 @@ const Services = () => {
 
                 <ImageContainer>
                     <img src={BehaviorSrc} alt="Behavior Therapy" />
+                </ImageContainer>
+
+            </Section>
+
+            {/* Service: Physiotherapy */}
+            <Section>
+
+                <h2>Physiotherapy</h2>
+
+                <ImageContainer>
+                    <img src={PhysioSrc} alt="Physiotherapy" />
                 </ImageContainer>
 
             </Section>

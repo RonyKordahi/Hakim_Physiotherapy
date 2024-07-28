@@ -7,7 +7,6 @@ import GlobalStyles from "./styles/Globalstyles";
 // Pages
 import Home from "./pages/Home";
 import About from "./pages/About";
-import Landing from "./pages/Landing";
 import Gallery from "./pages/Gallery";
 import Contact from "./pages/Contact";
 import Services from "./pages/Services";

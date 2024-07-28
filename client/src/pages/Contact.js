@@ -28,7 +28,7 @@ const Contact = () => {
 
             <Section>
                 <LogoContainer>
-                    <Logo />
+                    <Logo width={500} height={500} />
                 </LogoContainer>
             </Section>
 

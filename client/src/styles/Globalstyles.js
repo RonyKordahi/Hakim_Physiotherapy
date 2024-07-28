@@ -34,6 +34,7 @@ body {
 }
 
 /* 5. Improve media defaults */
+/* visibility property is for ios svg shenanigans */
 img,
 picture,
 video,
@@ -81,6 +82,7 @@ main {
     margin: auto;
     padding: 25px;
     min-height: calc(100vh - 12rem);
+    max-width: 1600px;
 }
 
 footer {

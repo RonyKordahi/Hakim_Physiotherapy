@@ -11,6 +11,7 @@ import gallery_3 from "../assets/gallery/gallery_3.jpg"
 import gallery_4 from "../assets/gallery/gallery_4.jpg"
 import gallery_5 from "../assets/gallery/gallery_5.jpg"
 import gallery_6 from "../assets/gallery/gallery_6.jpg"
+import gallery_7 from "../assets/gallery/gallery_7.jpg"
 
 const Gallery = () => {
 
@@ -21,7 +22,8 @@ const Gallery = () => {
         { src: gallery_3, caption: "Plants galore" },
         { src: gallery_4, caption: "Violet" },
         { src: gallery_5, caption: "Harry Potter vibes with some pink shoes" },
-        { src: gallery_6, caption: "Coffee date" }
+        { src: gallery_6, caption: "Coffee date" },
+        { src: gallery_7, caption: "Facetime with the gang" }
     ];
 
     return (
