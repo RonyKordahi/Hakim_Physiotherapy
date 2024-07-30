@@ -128,10 +128,6 @@ footer {
 .carousel-indicators button.active {
     background-color: var(--purple) !important;
 }
-
-.carousel-inner{
-    overflow: visible;
-}
 `
 
 export default GlobalStyles;
