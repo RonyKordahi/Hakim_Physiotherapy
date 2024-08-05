@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Hakim_Physiotherapy/static/css/main.d5289b2f.css",
-    "main.js": "/Hakim_Physiotherapy/static/js/main.cf8fa9bb.js",
+    "main.js": "/Hakim_Physiotherapy/static/js/main.4a8af1d1.js",
     "static/media/Mireille.png": "/Hakim_Physiotherapy/static/media/Mireille.7aa0a6a26b58baa5bcba.png",
     "static/media/gallery_1.jpg": "/Hakim_Physiotherapy/static/media/gallery_1.352998cd04a08966d7c8.jpg",
     "static/media/gallery_6.jpg": "/Hakim_Physiotherapy/static/media/gallery_6.26608458d063aa5d2a15.jpg",
@@ -12,12 +12,13 @@
     "static/media/gallery_7.jpg": "/Hakim_Physiotherapy/static/media/gallery_7.e6b4abf8894d1326c455.jpg",
     "static/media/service_physio.png": "/Hakim_Physiotherapy/static/media/service_physio.17f49519111f70b82b49.png",
     "static/media/service_behavior.png": "/Hakim_Physiotherapy/static/media/service_behavior.ac51ebee521db27a59b5.png",
+    "static/media/service_needling.png": "/Hakim_Physiotherapy/static/media/service_needling.4aff13c5dc947641b322.png",
     "index.html": "/Hakim_Physiotherapy/index.html",
     "main.d5289b2f.css.map": "/Hakim_Physiotherapy/static/css/main.d5289b2f.css.map",
-    "main.cf8fa9bb.js.map": "/Hakim_Physiotherapy/static/js/main.cf8fa9bb.js.map"
+    "main.4a8af1d1.js.map": "/Hakim_Physiotherapy/static/js/main.4a8af1d1.js.map"
   },
   "entrypoints": [
     "static/css/main.d5289b2f.css",
-    "static/js/main.cf8fa9bb.js"
+    "static/js/main.4a8af1d1.js"
   ]
 }
