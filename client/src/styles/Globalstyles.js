@@ -128,6 +128,7 @@ footer {
 .carousel-indicators button.active {
     background-color: var(--purple) !important;
 }
+
 `
 
 export default GlobalStyles;

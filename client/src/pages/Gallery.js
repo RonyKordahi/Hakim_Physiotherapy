@@ -1,3 +1,6 @@
+// React
+import { useEffect } from "react";
+
 // Styled Components
 import styled from "styled-components";
 
@@ -26,31 +29,34 @@ const Gallery = () => {
         { src: gallery_7, caption: "Facetime with the gang" }
     ];
 
+    useEffect(() => {
+        const inner = document.querySelector(".carousel-inner");
+        inner.style.overflow = "visible";
+    }, [])
+
     return (
         <main>
             <Section>
 
                 <h2>Gallery</h2>
 
-
-                <StyledCarousel>
+                <StyledCarousel fade={true}>
 
                     {
                         galleryImages.map((image, index) => {
                             return (
-                                <StyledCarouselItem key={`gallery_${index}`}>
-                                    <Image src={image.src} alt={"gallery image"} />
+                                    <StyledCarouselItem key={`gallery_${index}`}>
+                                        <Image src={image.src} alt={"gallery image"} />
 
-                                    <StyledCarouselCaption>
-                                        {image.caption}
-                                    </StyledCarouselCaption>
-                                </StyledCarouselItem>
+                                        <StyledCarouselCaption>
+                                            {image.caption}
+                                        </StyledCarouselCaption>
+                                    </StyledCarouselItem>
                             )
                         })
                     }
 
                 </StyledCarousel>
-
 
             </Section>
         </main>
@@ -58,15 +64,15 @@ const Gallery = () => {
 }
 
 const Section = styled.section`
-    text-align: center;
     margin-top: 50px;
+    text-align: center;
 `
 
 const StyledCarousel = styled(Carousel)`
     margin: auto;
     border-radius: 10px;
     margin-bottom: 75px;
-
+    
     /* PC + laptop screens */
     width: 33%;
 
@@ -84,7 +90,6 @@ const StyledCarousel = styled(Carousel)`
 const StyledCarouselItem = styled(CarouselItem)`
     padding: 25px;
     border-radius: 10px;
-    position: static !important;
     background: rgb(191,174,193);
     background: linear-gradient(90deg, rgba(191,174,193,1) 0%, rgba(212,201,213,1) 100%);
 `
